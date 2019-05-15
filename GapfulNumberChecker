@@ -1,0 +1,54 @@
+#write a gapful number checker
+#I forgot how to do input so I'll just use a variable as input
+
+#please input the number you want to check at num =
+
+num = 583
+
+inpNum = str(num)
+
+#inpNum = input("please input a number to check for gapfulness")
+
+if len(inpNum) >= 3:
+	
+	first = inpNum[0]
+	last = inpNum[-1]
+	
+	gap = first + last
+	
+	
+	if int(inpNum)%int(gap) == 0:
+		print("this is a gapful number")
+	
+	else:
+		print("this is not a gapful number")
+
+else:
+	print("A gapful number must be at least 3 digits long. \nPlease try again")
+	
+	
+	
+	
+
+
+
+'''
+Gapful Numbers
+
+A gapful number is a number of at least 3 digits that is divisible by the number formed by the first and last digit of the original number.
+
+For Example:
+Input: 192
+Output: true (192 is gapful because it is divisible 12)
+
+Input: 583
+Output: true (583 is gapful because it is divisible by 53)
+
+Input: 210
+Output: false (210 is not gapful because it is not divisible by 20)
+
+Write a program to check if the user input is a gapful number or not.
+
+as a bonus write a programme that gives you all gapful numbers within range.
+'''
+
